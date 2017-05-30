@@ -67,7 +67,7 @@ Include  `export TV_DIR_DATA="/MY/LARGE/HDD/DATA"` in your `.profile` and the al
 
 ### Modifying Model & Train on your own data
 
-The model is controlled by the file `hypes/multinet3.json`. This file points the code to the implementation of the submodels. The MultiNet code then loads all models provided and integrades the decoders into one neuronal network. To train on your own data, it should be enough to modify the hype files of the submodels. A good start will be the [KittiSeg](https://github.com/MarvinTeichmann/KittiSeg#kittiseg), which is very well documented.
+The model is controlled by the file `hypes/multinet3.json`. This file points the code to the implementation of the submodels. The MultiNet code then loads all models provided and integrates the decoders into one neural network. To train on your own data, it should be enough to modify the hype files of the submodels. A good start will be the [KittiSeg](https://github.com/MarvinTeichmann/KittiSeg#kittiseg) model, which is very well documented.
 
 ```
     "models": {
@@ -79,7 +79,7 @@ The model is controlled by the file `hypes/multinet3.json`. This file points the
 
 ### RUNDIR and Experiment Organization
 
-MultiNet helps you to organize large number of experiments. To do so the output of each run is stored in its own rundir. Each rundir contains:
+MultiNet helps you to organize a large number of experiments. To do so, the output of each run is stored in its own rundir. Each rundir contains:
 
 * `output.log` a copy of the training output which was printed to your screen
 * `tensorflow events` tensorboard can be run in rundir
